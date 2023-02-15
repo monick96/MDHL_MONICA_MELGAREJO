@@ -176,6 +176,11 @@ section p {
     margin-bottom: 1.2rem;
 }
 /* seccion index styles */
+main section.events{
+    margin: 1rem 3rem;
+    padding: 1rem 2.5rem;
+
+}
 section.events p,section.events h3 {
     padding-bottom: 0;
 }
@@ -183,6 +188,11 @@ section.events p,section.events h3 {
 
 
 /* section about style */
+
+main section.about{
+    margin: 1rem 3rem;
+    padding: 1rem 2.5rem;
+}
 
 section.about h3{
     font-size: 0.6rem;
@@ -200,6 +210,10 @@ section.about p{
 }
 
 /* section contact style */
+main section.contact{
+    margin: 1rem 3rem;
+    padding: 1rem 2.5rem;
+}
 
 /* main rules styles */
 
