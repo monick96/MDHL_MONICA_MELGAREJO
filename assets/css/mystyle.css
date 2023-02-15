@@ -54,7 +54,7 @@ header.main-title h1 {
     font-size: 1.2rem;
     font-weight: bold;
     display: inline-block;
-    position: relative;
+    /* position: relative; */
     top: 50%;
     transform: translateY(-50%);
     width: 80%;
