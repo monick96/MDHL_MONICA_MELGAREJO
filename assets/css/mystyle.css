@@ -95,7 +95,7 @@ nav a:hover {
 
 /* header main-header style */
 header#main-header{
-    height: 40vh;
+    height: 30vh;
     position: relative;
     background-color: #ffffff87;
     
@@ -138,10 +138,21 @@ header#main-header{
 }
 
 
-  /* Main navigation styles */
+  /* Main styles */
 main{
-    height: 30vh;
+    margin-top: 3.5rem;
+    /* height: 40vh; */
     position: relative;
+    /* position: relative; */
+    background-image: url('../../assets/img/hockey\ 3.jpg');
+    background-size: cover;
+    z-index: 2;
+    /* height: 100%; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    object-fit: cover;
     
 }
 
@@ -170,11 +181,7 @@ section li {
     list-style: none;
 }
 
-  /* Footer styles */
-footer {
-    height: 10vh;
-    
-}
+
 
 /* section about style */
 
@@ -194,3 +201,131 @@ section.about p{
 }
 
 /* section contact style */
+
+/* main rules styles */
+
+main div.rules {
+    z-index: index 1;
+    height: 100%;
+    margin: 0rem 3.2rem 3.2rem 3.2rem;
+    background-color: rgba(255, 255, 255, 0.729);
+    font-size: 0.5rem;
+    padding: 1rem 2.3rem 2.3rem 2.3rem;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+
+/* selecciona el primer y segundo hijo h3 del contenedor .rules*/
+.rules h3:first-child,h3:nth-child(2){
+    text-align: center;
+    padding-bottom: 0;
+}
+
+/* selecciona el primer p en el contenedor*/
+.rules p:first-of-type{
+    text-align: center;
+}
+
+.rules p,h3,li {
+    padding-bottom: 1rem;
+}
+
+/* en . rules selecciona los p pero que no sean el primero en el contenedor*/
+.rules p:not(:first-of-type){
+    text-indent:1rem;
+}
+
+.rules span{
+    font-weight: bold;
+}
+
+.rules ol {
+    list-style-position: outside;
+    text-indent: 0.1rem;
+}
+.rules ol>li {
+    margin-left: 0.5rem;
+}
+
+/* selecciona los li que deciendan de ol y a la vez que decienda de un li en .rules*/
+.rules li ol li {
+    padding-bottom: 0.2rem;
+}
+
+.rules ul {
+    list-style-position: outside;
+    text-indent: 0.2rem;
+}
+.rules ul>li {
+    margin-left: 2rem;
+}
+
+/* selecciona el ultimo p en .rules*/
+.rules p:last-of-type{
+    padding: 0;
+}
+
+/*game information style section*/
+main .game{
+    background-color: rgba(240, 255, 255, 0.662);
+    margin: 1rem 2rem 2rem 2rem;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+    font-size: 0.65rem;
+}
+
+.game h3{
+    text-align: center;
+}
+.game h4,p:first-of-type{
+    margin-bottom: 0.5rem;
+}
+
+.game > p:first-of-type{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+
+.game table.gameTable {
+    border: 2px solid #ffffffd4;
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+.game table.gameTable td, table.gameTable th {
+    border: 1px solid #FFFFFF;
+    padding: 3px 4px;
+}
+
+.game table.gameTable thead th {
+    /* font-size: 15px; */
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+}
+.game table.gameTable thead th:first-child {
+    border-left: none;
+}
+
+.game span{
+    font-weight: bold;
+}
+
+.game>p:nth-of-type(2),.game>p:nth-of-type(3){
+    padding-bottom: 1rem;
+}
+
+.game .info {
+    display: flex; /* Establecemos el contenedor como un contenedor flexible */
+    flex-wrap: wrap; /* Establecemos el comportamiento de envoltura de línea */
+    justify-content: space-between; /* Distribuimos los elementos a lo largo del contenedor */
+}
+
+
+
+  /* Footer styles */
+footer {
+    height: 10vh;
+    margin-top: 10rem;
+} 
