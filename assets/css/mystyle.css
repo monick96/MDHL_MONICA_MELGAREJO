@@ -1,0 +1,483 @@
+/* General styles */
+*{
+    box-sizing: border-box;
+    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #333; */
+    /* color: #fff; */
+
+}
+body {
+    height: 100vh;
+    
+
+}
+
+.main-title {
+    height: 10vh;
+    position: relative;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgb(30 29 29 / 92%);
+    color: #fdfdfd;
+}
+
+header.main-title a {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.main-title a:first-child {
+    left: 16%;
+}
+
+.main-title a:last-child {
+    right: 16%;
+}
+
+header.main-title a img {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-title a:hover img {
+    transform: rotate(360deg);
+}
+
+header.main-title h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+    /* position: relative; */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80%;
+}
+
+/* nav styles */
+nav {
+    height: 10vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #000000c2;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 0.6rem;
+    font-weight: bold;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: #00000000;
+    padding: 0.1rem;
+}
+nav a:hover {
+    border: 1.5px solid rgb(246, 244, 244);
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+
+/* header main-header style */
+header#main-header{
+    height: 30vh;
+    position: relative;
+    background-color: #ffffff87;
+    
+}
+
+.back-main-title {
+    top: 0;
+    left: 0;
+
+}
+
+.back-main-title img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.subtitle-logo {
+    background-color: #00000057;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    /* padding-top: 1rem; */
+    
+}
+
+.subtitle h2{
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.logo img {
+    width: 10%;
+}
+
+
+  /* Main styles */
+main{
+    margin-top: 3.5rem;
+    /* height: 40vh; */
+    position: relative;
+    /* position: relative; */
+    background-image: url('../../assets/img/hockey\ 3.jpg');
+    background-size: cover;
+    z-index: 2;
+    /* height: 100%; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    object-fit: cover;
+    
+}
+
+
+
+section {
+    padding: 1rem;
+    text-align: center;
+    background-color: #ffffff87;
+    /* margin-top: 6%; */
+}
+
+section h3 {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    /* margin-bottom: 0.3rem; */
+}
+
+section p {
+    font-size: 0.6rem;
+    margin-bottom: 1.2rem;
+}
+/* seccion index styles */
+main section.events{
+    margin: 1rem 3rem;
+    padding: 1rem 2.5rem;
+
+}
+section.events p,section.events h3 {
+    padding-bottom: 0;
+}
+
+
+
+/* section about style */
+
+main section.about{
+    margin: 1rem 3rem;
+    padding: 1rem 2.5rem;
+}
+
+section.about h3{
+    font-size: 0.6rem;
+    /* font-weight: bolder;
+    margin-bottom: 0.3rem; */
+}
+
+section.about p{
+    font-size: 0.5rem;
+    /* font-weight: bolder;
+    margin-bottom: 0.3rem; */
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+}
+
+/* section contact style */
+main section.contact{
+    margin: 1rem 3rem;
+    padding: 1rem 2.5rem;
+}
+
+/* main rules styles */
+
+main div.rules {
+    z-index: index 1;
+    height: 100%;
+    margin: 0rem 3.2rem 3.2rem 3.2rem;
+    background-color: rgba(255, 255, 255, 0.729);
+    font-size: 0.5rem;
+    padding: 1rem 2.3rem 2.3rem 2.3rem;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+
+/* selecciona el primer y segundo hijo h3 del contenedor .rules*/
+.rules h3:first-child,h3:nth-child(2){
+    text-align: center;
+    padding-bottom: 0;
+}
+
+/* selecciona el primer p en el contenedor*/
+.rules p:first-of-type{
+    text-align: center;
+}
+
+.rules p,h3,li {
+    padding-bottom: 1rem;
+}
+
+/* en . rules selecciona los p pero que no sean el primero en el contenedor*/
+.rules p:not(:first-of-type){
+    text-indent:1rem;
+}
+
+.rules span{
+    font-weight: bold;
+}
+
+.rules ol {
+    list-style-position: outside;
+    text-indent: 0.1rem;
+}
+.rules ol>li {
+    margin-left: 0.5rem;
+}
+
+/* selecciona los li que deciendan de ol y a la vez que decienda de un li en .rules*/
+.rules li ol li {
+    padding-bottom: 0.2rem;
+}
+
+.rules ul {
+    list-style-position: outside;
+    text-indent: 0.2rem;
+}
+.rules ul>li {
+    margin-left: 2rem;
+}
+
+/* selecciona el ultimo p en .rules*/
+.rules p:last-of-type{
+    padding: 0;
+}
+
+/*game information style section*/
+main .game{
+    background-color: rgba(240, 255, 255, 0.662);
+    margin: 1rem 2rem 2rem 2rem;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+    font-size: 0.65rem;
+}
+
+.game h3{
+    text-align: center;
+}
+.game h4, .game p:first-of-type{
+    margin-bottom: 0.5rem;
+}
+
+.game > p:first-of-type{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+
+.game table.gameTable {
+    border: 2px solid #ffffffd4;
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+.game table.gameTable td, table.gameTable th {
+    border: 1px solid #FFFFFF;
+    padding: 3px 4px;
+}
+
+.game table.gameTable thead th {
+    /* font-size: 15px; */
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+}
+.game table.gameTable thead th:first-child {
+    border-left: none;
+}
+
+.game span{
+    font-weight: bold;
+}
+
+.game>p:nth-of-type(2),.game>p:nth-of-type(3){
+    padding-bottom: 1rem;
+}
+
+.game .info {
+    display: flex; /* Establecemos el contenedor como un contenedor flexible */
+    flex-wrap: wrap; /* Establecemos el comportamiento de envoltura de línea */
+    justify-content: space-between; /* Distribuimos los elementos a lo largo del contenedor */
+}
+
+.game .maps{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    /* justify-content: space-between; */
+}
+
+.game .maps div>h5{
+    margin: 0rem 1rem 1rem;
+    text-align: center;
+}
+.game .maps div{
+    width: 16%;
+}
+.maps iframe{
+    margin: 0.5rem;
+    width: 100%;
+    height: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.398) !important;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    object-fit: contain;
+}
+
+/*Registration section style*/
+main .record{
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.518);
+    margin: 1rem 3rem 3rem 3rem;
+    padding: 1rem 3rem 3rem 3rem;
+    font-size: 0.68rem;
+}
+.record h3{
+    text-align: center;
+    margin: 0rem 0rem;
+}
+.record form{
+    margin: 0 auto;
+    width: 90%;
+    font-size: 0.6rem;
+    border: 1px solid #211f1f8e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.414);
+
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.record label.center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 0.3rem;
+    border: 1px solid #f6dcdc;
+    border-radius: 1rem;
+    margin-bottom: 0.4rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+
+}
+input[type="radio"],
+input[type="checkbox"] {
+    /* margin-right: 1rem; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: start; */
+}
+
+.record form input,.record form select,.record form label{
+    font-size: 0.6rem;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+.record form input[type="checkbox"],.record form input[type="radio"]{
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+}
+
+.record span{
+    font-weight: bold;
+}
+.record p{
+    text-align: center;
+    margin: 0.5rem;
+
+}
+
+.record p:nth-of-type(4), .record p:last-of-type{
+    /* margin: 0 1rem; */
+    font-size: 0.45rem;
+}
+
+.record input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #35ae39b0;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.5rem 0.7rem;
+    border-radius:0.4rem;
+    cursor: pointer;
+    -webkit-border-radius:0.4rem;
+    -moz-border-radius:0.4rem;
+    -ms-border-radius:0.4rem;
+    -o-border-radius:0.4rem;
+}
+
+.record input[type="submit"]:hover {
+    background-color: #2c652e;
+}
+
+
+
+
+  /* Footer styles */
+footer {
+    height: 10vh;
+    margin-top: 10rem;
+    background-color:#333333;
+} 
