@@ -6,7 +6,7 @@
     padding: 0;
     /* background-color: #333; */
     /* color: #fff; */
-    font-size: 2rem;
+    
 
 }
 body {
@@ -22,6 +22,7 @@ body {
     padding: 1rem 0;
     background-color: rgb(30 29 29 / 92%);
     color: #fdfdfd;
+    font-size: 1.6rem;
 }
 
 header.main-title a {
@@ -52,7 +53,6 @@ header.main-title a img {
 }
 
 header.main-title h1 {
-    font-size: 2rem;
     font-weight: bold;
     display: inline-block;
     /* position: relative; */
@@ -77,7 +77,7 @@ nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 1rem;
-    font-size: 0.6rem;
+    /* font-size: 0.6rem; */
     font-weight: bold;
     transition: box-shadow 0.3s ease-in-out;
     background-color: #00000000;
@@ -99,6 +99,7 @@ header#main-header{
     height: 30vh;
     position: relative;
     background-color: #ffffff87;
+    font-size: 1.8rem;
     
 }
 
@@ -129,7 +130,7 @@ header#main-header{
 }
 
 .subtitle h2{
-    font-size: 1rem;
+    /* font-size: 1rem; */
     color: #fff;
     margin-bottom: 0.5rem;
 }
@@ -141,7 +142,8 @@ header#main-header{
 
   /* Main styles */
 main{
-    margin-top: 3.5rem;
+    font-size: 1.4rem;;
+    margin-top: 4rem;
     /* height: 40vh; */
     position: relative;
     /* position: relative; */
@@ -167,13 +169,13 @@ section {
 }
 
 section h3 {
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
     font-weight: bolder;
     /* margin-bottom: 0.3rem; */
 }
 
 section p {
-    font-size: 0.6rem;
+    /* font-size: 0.6rem; */
     margin-bottom: 1.2rem;
 }
 /* seccion index styles */
@@ -196,13 +198,13 @@ main section.about{
 }
 
 section.about h3{
-    font-size: 0.6rem;
+    /* font-size: 0.6rem; */
     /* font-weight: bolder;
     margin-bottom: 0.3rem; */
 }
 
 section.about p{
-    font-size: 0.5rem;
+    /* font-size: 0.5rem; */
     /* font-weight: bolder;
     margin-bottom: 0.3rem; */
     width: 50%;
@@ -223,7 +225,7 @@ main div.rules {
     height: 100%;
     margin: 0rem 3.2rem 3.2rem 3.2rem;
     background-color: rgba(255, 255, 255, 0.729);
-    font-size: 0.5rem;
+    /* font-size: 0.5rem; */
     padding: 1rem 2.3rem 2.3rem 2.3rem;
     font-family:'Courier New', Courier, monospace;
     
@@ -282,12 +284,13 @@ main div.rules {
 /*game information style section*/
 main .game{
     background-color: rgba(240, 255, 255, 0.662);
-    margin: 1rem 2rem 2rem 2rem;
+    margin: 1.5rem 2rem 2rem 2rem;
     padding: 0rem 1.5rem 1.5rem 1.5rem;
-    font-size: 0.65rem;
+    /* font-size: 0.65rem; */
 }
 
 .game h3{
+    padding-top: 1.5rem;
     text-align: center;
 }
 .game h4, .game p:first-of-type{
@@ -370,16 +373,17 @@ main .record{
     background-color: rgba(0, 0, 0, 0.518);
     margin: 1rem 3rem 3rem 3rem;
     padding: 1rem 3rem 3rem 3rem;
-    font-size: 0.68rem;
+    /* font-size: 0.68rem; */
 }
 .record h3{
     text-align: center;
     margin: 0rem 0rem;
+    /* font-size: 1rem; */
 }
 .record form{
     margin: 0 auto;
     width: 90%;
-    font-size: 0.6rem;
+    /* font-size: 0.8rem; */
     border: 1px solid #211f1f8e;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.414);
 
@@ -425,7 +429,7 @@ input[type="checkbox"] {
 }
 
 .record form input,.record form select,.record form label{
-    font-size: 0.6rem;
+    /* font-size: 0.6rem; */
     transform: scale(0.8);
     -webkit-transform: scale(0.8);
     -moz-transform: scale(0.8);
@@ -450,8 +454,8 @@ input[type="checkbox"] {
 }
 
 .record p:nth-of-type(4), .record p:last-of-type{
-    /* margin: 0 1rem; */
-    font-size: 0.45rem;
+  
+    font-size: 1rem;
 }
 
 .record input[type="submit"] {
