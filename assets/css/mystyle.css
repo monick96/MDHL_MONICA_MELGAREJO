@@ -429,12 +429,15 @@ input[type="checkbox"] {
 }
 
 .record form input,.record form select,.record form label{
-    /* font-size: 0.6rem; */
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -o-transform: scale(0.8);
+    /*font-size: 0.6rem;
+
+    */
+    margin: 0.1rem;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
 }
 .record form input[type="checkbox"],.record form input[type="radio"]{
     transform: scale(0.7);
