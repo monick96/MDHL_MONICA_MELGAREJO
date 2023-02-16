@@ -6,6 +6,7 @@
     padding: 0;
     /* background-color: #333; */
     /* color: #fff; */
+    font-size: 2rem;
 
 }
 body {
@@ -51,7 +52,7 @@ header.main-title a img {
 }
 
 header.main-title h1 {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: bold;
     display: inline-block;
     /* position: relative; */
